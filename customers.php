@@ -1,3 +1,7 @@
+<?php
+include 'conn.php';
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="bot.svg" type="image/svg">
+   
     <link rel="stylesheet" href="style.css">
     <title>TSF Bank Customer List</title>
 </head>
@@ -46,7 +50,7 @@
 
 			</tr>
 			<?php
-			include 'conn.php';
+			
 
 			$q = "select * from customer";
 
